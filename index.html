@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>yummy</title>
+  </head>
+  <body>
+    <!-- ----------start of nave-------------------------------------  -->
+
+    <div class="side-nave vh-100 top-0 position-fixed d-flex">
+      <div
+        class="p-2 nave-bar vh-100 d-flex flex-column justify-content-between"
+      >
+        <div class="links">
+          <ul class="list-unstyled">
+            <li onclick="getsearch()" class="my-2 my-2 position-relative">
+              searsh
+            </li>
+            <li onclick="getCategories()" class="my-2 position-relative">
+              Categories
+            </li>
+            <li onclick="getArea()" class="my-2 position-relative">Area</li>
+            <li onclick="getIngredients()" class="my-2 position-relative">
+              Ingredients
+            </li>
+            <li onclick="getContact()" class="my-2 position-relative">
+              contactus
+            </li>
+          </ul>
+        </div>
+        <div class="nave-footer">
+          <div class="icons d-flex justify-content-evenly mb-3 text-black">
+            <i class="fa-brands fa-facebook text-dark-emphasis"></i>
+            <i class="fa-brands fa-twitter-square text-dark-emphasis"></i>
+            <i class="fas fa-globe text-dark-emphasis"></i>
+          </div>
+          <p>
+            Copyright Â© 2019 All Rights
+            <br />
+            Reserved.
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-body-secondary nave-header d-flex text-center flex-column justify-content-between"
+      >
+        <div class="logo-img">
+          <img class="logo" src="imgs/logo.png" alt="logo" />
+        </div>
+
+        <i class="togill-icon fas fa-bars text-dark-emphasis fa-2x px-1"></i>
+
+        <div class="d-flex flex-column">
+          <i class="fas fa-globe text-dark-emphasis py-3"></i>
+          <i class="fas fa-share-nodes text-dark-emphasis py-3"></i>
+        </div>
+      </div>
+    </div>
+    <!-- ----------end of nave-------------------------------------  -->
+    <!-- ----------start of search-------------------------------------  -->
+
+    <div class="container mt-4" id="search">
+      <!-- <div class="row g-3">
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control bg-transparent text-warning"
+            placeholder="Search by Name"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            maxlength="1"
+            type="text"
+            class="form-control bg-transparent text-warning"
+            placeholder="Search by First letter"
+          />
+        </div>
+      </div> -->
+    </div>
+    <!-- ----------end of search-------------------------------------  -->
+
+    <!-- ----------start of main-------------------------------------  -->
+
+    <div class="container">
+      <div class="row p-3" onclick="" id="mainFood"></div>
+    </div>
+    <!-- ----------end of main-------------------------------------  -->
+
+    <!-- ----------start of contact-------------------------------------  -->
+    <!-- <div class="container contact">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <input
+            onkeyup="inputsValidation()"
+            id="nameInput"
+            type="text"
+            class="form-control"
+            placeholder="Enter Your Name"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            onkeyup="inputsValidation()"
+            id="emailInput"
+            type="email"
+            class="form-control"
+            placeholder="Enter Your Email"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            onkeyup="inputsValidation()"
+            id="phoneInput"
+            type="tel"
+            class="form-control"
+            placeholder="Enter Your Phone"
+          />
+        </div>
+
+        <div class="col-md-6">
+          <input
+            onkeyup="inputsValidation()"
+            id="ageInput"
+            type="number"
+            class="form-control"
+            placeholder="Enter Your age"
+          />
+        </div>
+
+        <div class="col-md-6">
+          <input
+            onkeyup="inputsValidation()"
+            id="passwordInput"
+            type="password"
+            class="form-control"
+            placeholder="Enter Your Password"
+          />
+        </div>
+
+        <div class="col-md-6">
+          <input
+            onkeyup="inputsValidation()"
+            id="secPasswordInput"
+            type="text"
+            class="form-control"
+            placeholder="Renter Your Password"
+          />
+        </div>
+
+        <button disabled class="btn btn-outline-warning mt-5 w-50 m-auto">
+          Submit
+        </button>
+      </div>
+    </div> -->
+    <!-- ----------end of contact-------------------------------------  -->
+    <!-- ----------start of details-------------------------------------  -->
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img
+            src="imgs/g046bb1663960946.jpg"
+            class="w-100 rounded-2 mb-1"
+            alt="meal photo"
+          />
+          <h2 class="text-white">beef and mus</h2>
+        </div>
+        <div class="col-md-8">
+          <h3 class="text-white">Instructions</h3>
+          <p class="text-white">
+            Preheat the oven to 150C/300F/Gas 2. Toss the beef and flour
+            together in a bowl with some salt and black pepper. Heat a large
+            casserole until hot, add half of the rapeseed oil and enough of the
+            beef to just cover the bottom of the casserole. Fry until browned on
+            each side, then remove and set aside. Repeat with the remaining oil
+            and beef. Return the beef to the pan, add the wine and cook until
+            the volume of liquid has reduced by half, then add the stock, onion,
+            carrots, thyme and mustard, and season well with salt and pepper.
+            Cover with a lid and place in the oven for two hours. Remove from
+            the oven, check the seasoning and set aside to cool. Remove the
+            thyme. When the beef is cool and you're ready to assemble the pie,
+            preheat the oven to 200C/400F/Gas 6. Transfer the beef to a pie
+            dish, brush the rim with the beaten egg yolks and lay the pastry
+            over the top. Brush the top of the pastry with more beaten egg. Trim
+            the pastry so there is just enough excess to crimp the edges, then
+            place in the oven and bake for 30 minutes, or until the pastry is
+            golden-brown and cooked through. For the green beans, bring a
+            saucepan of salted water to the boil, add the beans and cook for 4-5
+            minutes, or until just tender. Drain and toss with the butter, then
+            season with black pepper. To serve, place a large spoonful of pie
+            onto each plate with some green beans alongside.
+          </p>
+          <h3 class="text-white">
+            <span class="fw-bolder">Area :</span>
+          </h3>
+          <h3 class="text-white">
+            <span class="fw-bolder">Category :</span>
+          </h3>
+          <h3 class="text-white">
+            <span class="fw-bolder">Recipes :</span>
+          </h3>
+          <div class="d-flex flex-wrap">
+            <div class="alert alert-secondary">rami</div>
+            <div class="alert alert-secondary">aadfsdf</div>
+            <div class="alert alert-secondary">rassssssssssssmi</div>
+            <div class="alert alert-secondary">ramei</div>
+            <div class="alert alert-secondary">rasmi</div>
+          </div>
+          <h3 class="text-white fw-bolder">Tags :</h3>
+          <div class="d-flex flex-wrap mb-3">
+            <div class="alert alert-secondary">rami</div>
+            <div class="alert alert-secondary">adfsdf</div>
+            <div class="alert alert-secondary">rasssssssmi</div>
+            <div class="alert alert-secondary">ramei</div>
+            <div class="alert alert-secondary">rasmi</div>
+          </div>
+
+          <button class="btn btn-success rounded-2 px-3 mb-5">Source</button>
+          <button class="btn btn-danger rounded-2 ms-3 mb-5">Youtube</button>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- ----------end of details-------------------------------------  -->
+
+    <script src="js/jquery-3.7.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
